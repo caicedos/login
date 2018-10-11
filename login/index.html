@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projet X</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Moment.js Reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid bg-warning text-white">
+        <div class="container">
+            <h1 class="display-4 text-center">Hobby Central</h1>
+            <p class="lead text-center">The place to keep track and find new hobbies.</p>
+        </div>
+    </div>
+    <div class="container">
+        <a href="./login.html" type="button" class="btn btn-primary btn-lg btn-block">Hobby Tracker App</a>
+    </div>
+
+
+
+    <div class="container">
+        <div class="card-deck">
+            <div class="card">
+
+                <img class="card-img-top" src="./assets/images/board-games.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Board Games</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <img class="card-img-top" src="./assets/images/Christmas-in-Chiang-Mai-425x425.webp" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Bowling</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                        content.</p>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <img class="card-img-top" src="./assets/images/1372733423624.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Fishing</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-4 thumbnail" value="fishing" id="fishing"></div>
+            <div class="col-4 thumbnail" value="bowling" id="bowling"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 thumbnail" value="board-games" id="board-games"></div>
+            <div class="col-4 thumbnail" value="camping" id="camping"></div>
+        </div>
+    </div>
+
+    <div id="suggested-hobby-img"></div>
+
+
+
+
+
+    <!--link to app.js-->
+    <script type="text/javascript" src="./javascript/suggested_images.js"></script>
+</body>
+
+</html>
